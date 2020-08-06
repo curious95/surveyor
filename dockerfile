@@ -3,6 +3,8 @@ LABEL version="1.0" maintainer="Sukru Uzel <sukru.uzel@icloud.com>"
 
 ARG POSTGREST_VERSION=7.0.1
 
+RUN sed -i'' 's/archive\.ubuntu\.com/us\.archive\.ubuntu\.com/' /etc/apt/sources.list
+
 # Install libpq5
 RUN apt-get -qq update && \
   apt-get -qq install -y --no-install-recommends libpq5 && \
