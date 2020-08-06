@@ -3,8 +3,6 @@ from sqlalchemy import exc
 from jinja2 import Template
 from datetime import datetime
 
-from app.models.models import Customers, History, Reminders
-from app.models.base_ import Base, engine, Session
 from app.configuration import Config
 
 import logging

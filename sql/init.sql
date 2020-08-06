@@ -1,4 +1,1 @@
-CREATE TABLE app_users(
-   USER_ID INT PRIMARY KEY      NOT NULL,
-   NAME           CHAR(50) NOT NULL
-);
+/home/groot/workspace/customer_manager/sms_templates/*.stp
