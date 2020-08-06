@@ -48,8 +48,15 @@ services:
     image: grafana/grafana:latest
     container_name: grafana
     ports:
-      - "4000:4000"
+      - "4000:3000"
     user: "0"
+
+  frontend:
+    container_name: frontend
+    build:
+      context: app/.
+    ports:
+      - "5000:5000"
 
 volumes:
   postgres-data: {}

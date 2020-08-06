@@ -1,0 +1,13 @@
+FROM python:3.6-slim
+
+COPY requirements-dev.txt /
+
+RUN pip install -r requirements-dev.txt
+
+copy . /app
+
+WORKDIR /
+
+EXPOSE 5000
+
+ENTRYPOINT ["bash", "-c", "python -m app"]
